@@ -28,7 +28,7 @@ export default function Header(){
                 />
                  </Link>
                 <div className="hidden gap-6 md:flex">
-                    <div className="flex gap-2">
+                    <div className="flex gap-4">
                         {links.map((link,index) =>
                             <Link href={link.href} key={index}>
                                 <span>{link.label}</span>
