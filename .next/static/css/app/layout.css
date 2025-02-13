@@ -652,6 +652,9 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
 .box-border {
   box-sizing: border-box;
 }
@@ -675,6 +678,9 @@ video {
 }
 .flex-col {
   flex-direction: column;
+}
+.items-end {
+  align-items: flex-end;
 }
 .items-center {
   align-items: center;

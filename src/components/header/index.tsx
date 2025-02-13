@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { MenuIcon, ShoppingCart } from "lucide-react";
+import { MenuIcon, ShoppingCart, X } from "lucide-react";
 
 
 const links = [
@@ -43,12 +43,25 @@ export default function Header(){
                             <Link className="text-purple-700" href="">Gerenciamento de produtos</Link>
                     </div>
                </div>
-                <nav className="flex justify-end ">
+
+                {isSideOpen && (
+                    <div className="md:hidden flex flex-col items-center gap-4 mt-8">
+                                                {links.map((link,index) =>
+                            <Link href={link.href} key={index}>
+                                <span>{link.label}</span>
+                            </Link> 
+                        )}
+                    </div>
+                )}
+                                <nav className="flex justify-end ">
                     <div className="flex md:hidden">
                         <button onClick={toggleSide}>
-                             
-
-                            <MenuIcon/>
+                            {isSideOpen?
+                                <X/>
+                                :
+                                <MenuIcon />
+                            }
+                        
                         </button>
                     </div>
                 </nav>
