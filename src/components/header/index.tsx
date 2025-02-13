@@ -6,7 +6,7 @@ import { MenuIcon, ShoppingCart, X } from "lucide-react";
 
 
 const links = [
-    {href: '/landingPage', label: 'Home'},
+    {href: '/home', label: 'Home'},
     {href: '/products', label: 'Produtos'},
     {href: '/contact', label: 'Contato'},
 ]
@@ -34,13 +34,13 @@ export default function Header(){
                                 <span>{link.label}</span>
                             </Link> 
                         )}
-                        <button className="bg-gray-500 px-2 rounded-sm ">Login</button>
+                        <button className="bg-[#7e57c2] px-2 rounded-sm ">Login</button>
                     </div>
                     <div className="flex gap-4">
-                            <button className="bg-gray-500 px-2 py-2 rounded-sm ">
+                            <button className="bg-[#7e57c2] px-2 py-2 rounded-sm ">
                                 <ShoppingCart/>
                             </button>
-                            <Link className="text-purple-700" href="">Gerenciamento de produtos</Link>
+                            <Link className="text-[#7e57c2]" href="">Gerenciamento de produtos</Link>
                     </div>
                </div>
 
