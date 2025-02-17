@@ -87,7 +87,8 @@ export default function HeroSection(){
             </div>
 
             <div className=" bg-[#2a2a2a] w-full flex flex-col gap-4 text-center items-center justify-center py-4 text-white">
-                    <Title title="Missão/Visão/Valores"/>
+                    <Title title="Sobre nós:"/>
+                    {/*Trocar isso aqui por componente tbm*/}
                     <div className="flex flex-col gap-4 md:flex-row">
                     <div className="flex flex-col w-fit gap-4 p-2 bg-[#7e57c2] rounded-xl justify-center items-center text-center">
                         <Title title="Missão"/>

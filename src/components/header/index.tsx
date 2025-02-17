@@ -6,8 +6,8 @@ import { MenuIcon, ShoppingCart, X } from "lucide-react";
 
 
 const links = [
-    {href: '/home', label: 'Home'},
-    {href: '/products', label: 'Produtos'},
+    {href: '/', label: 'Home'},
+    {href: '/games', label: 'Games'},
     {href: '/contact', label: 'Contato'},
 ]
 
@@ -52,8 +52,10 @@ export default function Header(){
                                 <span>{link.label}</span>
                             </Link> 
                         )}                   
-                      <button className="bg-[#7e57c2] px-2 rounded-sm ">Login</button>
-                        <Link href={'/management'}>
+                        <Link href={'/login'}>
+                            <button className="bg-[#7e57c2] px-2 rounded-sm ">Login</button>
+                        </Link>    
+                        <Link  href={'/management'}>
                             <span className="text-[#7e57c2]">Gerenciamento de Produtos</span>
                         </Link>
        
