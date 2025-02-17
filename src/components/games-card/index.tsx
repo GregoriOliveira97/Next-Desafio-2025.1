@@ -3,8 +3,8 @@ import Link from "next/link";
 
 type GameCardProps={
     name:string;
-    price: number;
-    categories: string[];
+    price?: number;
+    categories?: string[];
 
 }
 
@@ -18,7 +18,15 @@ export default function GameCard({name,price,categories}:GameCardProps){
             width={904}
             height={904}
             className="object-fit h-30 w-40 md:h-52 md:w-64"/>
-            
+            {categories&&categories.length>0 &&(
+            <div>
+                {categories.map((category,index) =>
+                    <span key={index}>{category}</span>
+                )}
+            </div>)}
+            <span>{name}</span>
+            <span>{price}</span>
+
         </div>
 
        </Link>
