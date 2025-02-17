@@ -18,7 +18,10 @@ export default function Games(){
                 </div>
             ):(
                 <div>
-                    <GameCard />
+                    <GameCard
+                    name="Nioh2- Complete Edition"
+                    price={199.90} 
+                    categories={['RPG','Ação']}/>
                 </div>
             )}
         </div>
