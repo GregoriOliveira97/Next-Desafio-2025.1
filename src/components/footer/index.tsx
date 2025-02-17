@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Footer(){
     return(
         <div className="bg-zinc-800 flex flex-col text-gray-300 text-[12px] w-full py-8 min-h-[250px] gap-12 items-center justify-center md:text-base">
-            <div className="flex justify-between w-full px-8">
+            <div className="flex justify-between w-full px-4">
                 <div className="flex flex-col gap-4">
                     <Image
                         src={'/logo/SkilloLogoSemfundo.png'} 
