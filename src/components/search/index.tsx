@@ -7,7 +7,7 @@ export default function Search({count}:SearchProps){
         <form className="flex flex-col w-full lg:w-10/12 gap-4"
         id="search"
         autoComplete="off">
-            <div className="bg-[#2a2a2a] flex flex-col items-center justify-center p-3 gap-4">
+            <div className="bg-[#2a2a2a] flex flex-col items-center justify-center p-3 gap-4 md:text-base xl:text-2xl">
                 <div className="relative flex items-center w-full gap-4">
                     <SearchIcon className="w-8 h-8 absolute text-[#7e57c2] p-1 rounded-sm"/>
                     <input 
@@ -18,7 +18,7 @@ export default function Search({count}:SearchProps){
                     placeholder="Busque o jogo desejado..."
                      />
                 </div>
-                <span className="text-white/70 text-sm">Total de {count} jogos encontrados.</span>
+                <span className="text-white/70 text-sm md:text-sm 2xl:text-xl">Total de {count} jogos encontrados.</span>
             </div>
 
         </form>
