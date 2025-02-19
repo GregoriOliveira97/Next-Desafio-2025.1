@@ -18,7 +18,8 @@ export default function AdminSidebar(){
 
     return(
         <div>
-             <div className="sm:hidden bg-[#3b157cce] flex flex-wrap items-center justify-between px-3 py-4">
+             <div className={`sm:hidden bg-[#3b157cce] flex flex-wrap items-center justify-between px-3 py-4
+             ${isAdminSidebarOpen? 'hidden':''}`}>
                 <div className="flex items-center gap-2 cursor-default">
                     <Image
                     src={'/logo/SkilloLogoSemfundo.png'}
@@ -37,7 +38,7 @@ export default function AdminSidebar(){
             ${isAdminSidebarOpen? '':'-translate-x-full'}
             sm:translate-x-0`}>
                 <div className="bg-[#3b157cce] h-full py-4 px-3 overflow-y-auto">
-                    <div className="flex items-center justify-between">
+                    <div className="flex bg-transparent items-center justify-between">
                         <div className="flex items-center gap-2 cursor-default">
                         <Image
                             src={'/logo/SkilloLogoSemfundo.png'}
