@@ -17,7 +17,7 @@ export default function DashboardCards({title,href,desc}:DashboardCardProps){
                     <h3 className="text-xl">{title}</h3>
                     <Settings/>
                 </div>
-                <span className="text-white/50 text">{desc}</span>
+                <span className="text-white/ text">{desc}</span>
 
             </div>
         </Link>
