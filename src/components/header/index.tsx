@@ -55,7 +55,7 @@ export default function Header(){
                         <Link href={'/login'}>
                             <button className="bg-[#7e57c2] px-2 rounded-sm ">Login</button>
                         </Link>    
-                        <Link  href={'/management'}>
+                        <Link  href={'/admin'}>
                             <span className="text-[#7e57c2]">Gerenciamento de Produtos</span>
                         </Link>
        
