@@ -7,7 +7,7 @@ const gameDesc = 'Game desc default'
 
 export default function EditGame(){
     return(
-        <div className="w-full lg:w-9/12 xl:w-7/12 2xl:w-5/12 p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4
+        <div className="w-full z-2 lg:w-9/12 xl:w-7/12 2xl:w-5/12 p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4
         text-white">
             <form className="flex flex-col gap-4" autoComplete="off">
                 <div className="flex flex-col gap-1">
@@ -18,11 +18,12 @@ export default function EditGame(){
                     defaultValue={gameName}
                      />
                      <label>Imagem</label>
-                    <Image
-                    src={'/imgs/nioh2capa.png'}
-                    alt="Imagem do jogo default"
-                    width={240}
-                    height={240}/>
+                     <div className="flex justify-center"><Image
+                        src={'/imgs/nioh2capa.png'}
+                        alt="Imagem do jogo default"
+                        width={240}
+                        height={240}/>
+                    </div>
                     <label>Preço</label>
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" 
                     name="edit-game-price"

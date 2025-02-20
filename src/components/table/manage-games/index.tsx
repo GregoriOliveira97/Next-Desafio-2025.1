@@ -3,7 +3,7 @@ import EditButton, { DeleteButton, EditGameButton, ViewGameButton } from "../but
 
 export default function ManageGamesTable(){
     return(
-        <div className="w-full p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4">
+        <div className="w-full z-2 p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4">
             <div className="flex  flex-wrap items-center w-full justify-between">
                 <span className="text-base self-end text-white/80">
                     99 categorias encontradas
