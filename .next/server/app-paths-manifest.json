@@ -1,7 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/admin/manage/categories/edit/[id]/page": "app/admin/manage/categories/edit/[id]/page.js",
-  "/(home)/page": "app/(home)/page.js",
-  "/(home)/catalog/page": "app/(home)/catalog/page.js",
-  "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js"
+  "/admin/page": "app/admin/page.js",
+  "/admin/manage/games/edit/page": "app/admin/manage/games/edit/page.js",
+  "/admin/manage/categories/create/page": "app/admin/manage/categories/create/page.js",
+  "/admin/manage/games/create/page": "app/admin/manage/games/create/page.js",
+  "/admin/manage/games/page": "app/admin/manage/games/page.js"
 }

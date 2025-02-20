@@ -56,10 +56,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/game/[id]/page.js"
     ],
-    "/_not-found/page": [
+    "/admin/manage/games/edit/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/admin/manage/games/edit/page.js"
+    ],
+    "/admin/manage/games/create/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin/manage/games/create/page.js"
     ]
   }
 }
