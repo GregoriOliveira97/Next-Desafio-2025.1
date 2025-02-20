@@ -37,7 +37,7 @@ export default function AdminSidebar(){
             className={`fixed top-0 left-0 z-100 w-full sm:w-72 h-screen transition-transform 
             ${isAdminSidebarOpen? '':'-translate-x-full'}
             sm:translate-x-0`}>
-                <div className="bg-[#3b157cce] h-full py-4 px-3 overflow-y-auto">
+                <div className="bg-[#5815ccfd] h-full py-4 px-3 overflow-y-auto">
                     <div className="flex bg-transparent items-center justify-between">
                         <div className="flex items-center gap-2 cursor-default">
                         <Image

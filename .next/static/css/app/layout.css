@@ -732,6 +732,9 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
+.min-h-\[100px\] {
+  min-height: 100px;
+}
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -839,6 +842,11 @@ video {
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
 .self-end {
   align-self: flex-end;
 }
@@ -942,6 +950,9 @@ video {
 .bg-\[\#3A3A3A\] {
   --tw-bg-opacity: 1;
   background-color: rgb(58 58 58 / var(--tw-bg-opacity));
+}
+.bg-\[\#5815ccfd\] {
+  background-color: #5815ccfd;
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));

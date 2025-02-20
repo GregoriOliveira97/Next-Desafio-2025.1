@@ -15,11 +15,14 @@ export default function CreateGame(){
                         alt="Imagem do jogo default"
                         width={240}
                         height={240}/>
+                    <label>Categorias</label>
+                    <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-categories"
+                    placeholder="RPG,Ação,Hack and Slash" />
                     <label>Preço</label>
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-price"
                     placeholder="Preço" />
                     <label>Descrição</label>
-                    <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-price"
+                    <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-desc"
                     placeholder="Descrição" />
 
                 </div>
