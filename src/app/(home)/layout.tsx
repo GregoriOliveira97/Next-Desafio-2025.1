@@ -6,7 +6,7 @@ export default function HomeLayout({
   }:{children: React.ReactNode;
     } ) {
       return (
-       <div>
+       <div className="flex flex-col w-full">
         <Header/>
         {children}
         <Footer/>

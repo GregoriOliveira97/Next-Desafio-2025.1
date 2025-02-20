@@ -9,8 +9,9 @@ export default function ManageCategoriesTable(){
                     99 categorias encontradas
                 </span>
                 <Link
-                href={'/admin/manage/categories'}>
-                    <button className="py-2 px-6 md:w-52 border-1 border-gray-700 rounded-md text-white bg-[#7e57c2] hover:bg-[#876db4]">+ Nova Categoria</button>
+                href={'/admin/manage/categories/create'}>
+                    <button className="py-2 px-6 md:w-52 border-1 border-gray-700 rounded-md text-white bg-[#7e57c2]
+                     hover:bg-[#876db4]">+ Nova Categoria</button>
                 </Link>
             </div>
                 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">

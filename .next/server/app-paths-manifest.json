@@ -1,6 +1,7 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/manage/categories/edit/[id]/page": "app/admin/manage/categories/edit/[id]/page.js",
   "/(home)/page": "app/(home)/page.js",
-  "/(home)/games/page": "app/(home)/games/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/admin/manage/categories/page": "app/admin/manage/categories/page.js"
+  "/(home)/catalog/page": "app/(home)/catalog/page.js",
+  "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js"
 }

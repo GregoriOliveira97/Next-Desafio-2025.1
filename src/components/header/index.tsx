@@ -7,7 +7,7 @@ import { MenuIcon, ShoppingCart, X } from "lucide-react";
 
 const links = [
     {href: '/', label: 'Home'},
-    {href: '/games', label: 'Games'},
+    {href: '/catalog', label: 'Games'},
     {href: '/contact', label: 'Contato'},
 ]
 
@@ -41,7 +41,7 @@ export default function Header(){
                             <button className="bg-[#7e57c2] px-2 py-2 rounded-md ">
                                 <ShoppingCart className="w-6 h-6 xl:w-10 xl:h-10"/>
                             </button>
-                            <Link className="text-[#7e57c2] text-center px-2 py-2" href="">Gerenciamento de produtos</Link>
+                            <Link className="text-[#7e57c2] text-center px-2 py-2" href="/admin">Gerenciamento de produtos</Link>
                     </div>
                </div>
 

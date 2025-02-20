@@ -1,5 +1,41 @@
 {
   "pages": {
+    "/admin/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin/layout.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/admin/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin/page.js"
+    ],
+    "/admin/manage/games/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin/manage/games/page.js"
+    ],
+    "/admin/manage/categories/create/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin/manage/categories/create/page.js"
+    ],
+    "/admin/manage/categories/edit/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin/manage/categories/edit/[id]/page.js"
+    ],
+    "/admin/manage/categories/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin/manage/categories/page.js"
+    ],
     "/(home)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -10,31 +46,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/layout.js"
     ],
-    "/layout": [
+    "/(home)/catalog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/app/(home)/catalog/page.js"
     ],
-    "/(home)/games/page": [
+    "/(home)/game/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(home)/games/page.js"
+      "static/chunks/app/(home)/game/[id]/page.js"
     ],
-    "/admin/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin/page.js"
-    ],
-    "/admin/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/admin/layout.js"
-    ],
-    "/admin/manage/categories/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/admin/manage/categories/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
