@@ -41,7 +41,7 @@ export default function Header(){
                             <Link href={'/cart'} className="bg-[#7e57c2] px-2 py-2 rounded-md ">
                                 <ShoppingCart className="w-6 h-6 xl:w-10 xl:h-10"/>
                             </Link>
-                            <Link className="text-[#7e57c2] text-center px-2 py-2" href="/admin">Gerenciamento de produtos</Link>
+                            <Link className="text-[#7e57c2] text-center px-2 py-2" href="/login">Gerenciamento de produtos</Link>
                     </div>
                </div>
 
@@ -55,7 +55,7 @@ export default function Header(){
                         <Link href={'/login'}>
                             <button className="bg-[#7e57c2] px-2 rounded-md ">Login</button>
                         </Link>    
-                        <Link  href={'/admin'}>
+                        <Link  href={'/login'}>
                             <span className="text-[#7e57c2]">Gerenciamento de Produtos</span>
                         </Link>
        

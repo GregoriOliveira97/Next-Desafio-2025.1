@@ -21,7 +21,7 @@ export default function Page(){
                     className="w-full rounded-md bg-[#444444] text-white p-1"/>
                 </div>
                 <div className="flex text-center flex-col gap-2">
-                    <button className="rounded-md px-12 md:px-24 py-2 bg-[#7e57c2]">Entrar</button>
+                    <Link href={'/admin'} className="rounded-md px-12 md:px-24 py-2 bg-[#7e57c2]">Entrar</Link>
                     <Link href={'/register'}
                     className="text-white/40 text-[12px] xl:text-base underline">nao tenho conta</Link>
                 </div>

@@ -1,7 +1,11 @@
 {
-  "/(home)/page": "app/(home)/page.js",
-  "/(home)/catalog/page": "app/(home)/catalog/page.js",
-  "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js",
   "/(login)/register/page": "app/(login)/register/page.js",
-  "/(home)/contact/page": "app/(home)/contact/page.js"
+  "/(home)/contact/page": "app/(home)/contact/page.js",
+  "/(login)/login/page": "app/(login)/login/page.js",
+  "/(home)/cart/page": "app/(home)/cart/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/(home)/page": "app/(home)/page.js",
+  "/admin/manage/games/page": "app/admin/manage/games/page.js",
+  "/admin/manage/games/edit/page": "app/admin/manage/games/edit/page.js",
+  "/admin/manage/games/view/page": "app/admin/manage/games/view/page.js"
 }
