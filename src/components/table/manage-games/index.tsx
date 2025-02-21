@@ -14,7 +14,7 @@ export default function ManageGamesTable(){
                      hover:bg-[#876db4]">+ Novo Jogo</button>
                 </Link>
             </div>
-                <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <div className="overflow-x-auto shadow-md sm:rounded-lg">
                     <table className="w-full text-base text-white text-left">
                         <thead className="uppercase bg-[#3a3a3a]">
                             <tr>

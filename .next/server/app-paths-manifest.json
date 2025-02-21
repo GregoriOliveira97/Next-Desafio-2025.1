@@ -1,6 +1,7 @@
 {
-  "/(home)/page": "app/(home)/page.js",
-  "/(home)/contact/page": "app/(home)/contact/page.js",
-  "/(home)/cart/page": "app/(home)/cart/page.js",
-  "/(home)/catalog/page": "app/(home)/catalog/page.js"
+  "/admin/page": "app/admin/page.js",
+  "/admin/manage/games/page": "app/admin/manage/games/page.js",
+  "/admin/manage/games/create/page": "app/admin/manage/games/create/page.js",
+  "/admin/manage/games/view/page": "app/admin/manage/games/view/page.js",
+  "/admin/manage/categories/page": "app/admin/manage/categories/page.js"
 }

@@ -35,12 +35,12 @@ export default function Header(){
                                 <span>{link.label}</span>
                             </Link> 
                         )}
-                        <button className="bg-[#7e57c2] px-2 rounded-sm ">Login</button>
+                        <Link href={'/'} className="bg-[#7e57c2] px-2 rounded-sm ">Login</Link>
                     </div>
                     <div className="flex gap-4 md:gap-8">
-                            <button className="bg-[#7e57c2] px-2 py-2 rounded-md ">
+                            <Link href={'/cart'} className="bg-[#7e57c2] px-2 py-2 rounded-md ">
                                 <ShoppingCart className="w-6 h-6 xl:w-10 xl:h-10"/>
-                            </button>
+                            </Link>
                             <Link className="text-[#7e57c2] text-center px-2 py-2" href="/admin">Gerenciamento de produtos</Link>
                     </div>
                </div>

@@ -34,11 +34,11 @@ export default function AdminSidebar(){
                 onClick={toggleAdminSidebar}/>
             </div>
             <aside
-            className={`fixed top-0 left-0 z-100 w-full sm:w-72 h-screen transition-transform 
-            ${isAdminSidebarOpen? '':'-translate-x-full'}
-            sm:translate-x-0`}>
+                className={`fixed top-0 left-0 z-100 w-full sm:w-72 h-screen transition-transform 
+                ${isAdminSidebarOpen? '':'-translate-x-full'}
+                sm:translate-x-0`}>
                 <div className="bg-[#7e57b7] h-full py-4 px-3 overflow-y-auto">
-                    <div className="flex bg-transparent items-center justify-between">
+                    <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2 cursor-default">
                         <Image
                             src={'/logo/SkilloLogoSemfundo.png'}
@@ -58,6 +58,7 @@ export default function AdminSidebar(){
                         {LinksSidebar.map(({href,label,icon:Icon},index)=>(
                             <li key={index}>
                                 <Link href={href}
+                                onClick={toggleAdminSidebar}
                                 className="flex items-center gap-2 px-2 py-2 rounded-lg hover:bg-white/20">
                                     <Icon className="w-8 h-8 text-white"/>
                                     <span className="text-white">
