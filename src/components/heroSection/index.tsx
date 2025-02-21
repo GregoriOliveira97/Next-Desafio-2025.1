@@ -51,27 +51,33 @@ export default function HeroSection(){
                     <GameCard
                     name="Nioh2- Complete Edition"
                     price={199.90} 
-                    categories={['RPG','Ação']}/>
+                    categories={['RPG','Ação']}
+                    buttonOff={true} />
                       <GameCard
                     name="Nioh2- Complete Edition"
                     price={199.90} 
-                    categories={['RPG','Ação']}/>
+                    categories={['RPG','Ação']}
+                    buttonOff={true}/>
                       <GameCard
                     name="Nioh2- Complete Edition"
                     price={199.90} 
-                    categories={['RPG','Ação']}/>
+                    categories={['RPG','Ação']}
+                    buttonOff={true}/>
                       <GameCard
                     name="Nioh2- Complete Edition"
                     price={199.90} 
-                    categories={['RPG','Ação']}/>
+                    categories={['RPG','Ação']}
+                    buttonOff={true}/>
                          <GameCard
                     name="Nioh2- Complete Edition"
                     price={199.90} 
-                    categories={['RPG','Ação']}/>
+                    categories={['RPG','Ação']}
+                    buttonOff={true}/>
                       <GameCard
                     name="Nioh2- Complete Edition"
                     price={199.90} 
-                    categories={['RPG','Ação']}/>
+                    categories={['RPG','Ação']}
+                    buttonOff={true}/>
 
                 </div>
                 <Link href={'/catalog'}
