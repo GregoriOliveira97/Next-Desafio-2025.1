@@ -35,7 +35,7 @@ export default function Header(){
                                 <span>{link.label}</span>
                             </Link> 
                         )}
-                        <Link href={'/'} className="bg-[#7e57c2] px-2 rounded-sm ">Login</Link>
+                        <Link href={'/login'} className="bg-[#7e57c2] px-2 py-1 rounded-md ">Login</Link>
                     </div>
                     <div className="flex gap-4 md:gap-8">
                             <Link href={'/cart'} className="bg-[#7e57c2] px-2 py-2 rounded-md ">
@@ -53,7 +53,7 @@ export default function Header(){
                             </Link> 
                         )}                   
                         <Link href={'/login'}>
-                            <button className="bg-[#7e57c2] px-2 rounded-sm ">Login</button>
+                            <button className="bg-[#7e57c2] px-2 rounded-md ">Login</button>
                         </Link>    
                         <Link  href={'/admin'}>
                             <span className="text-[#7e57c2]">Gerenciamento de Produtos</span>

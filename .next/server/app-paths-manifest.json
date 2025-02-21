@@ -1,7 +1,7 @@
 {
-  "/admin/page": "app/admin/page.js",
-  "/admin/manage/games/page": "app/admin/manage/games/page.js",
-  "/admin/manage/games/create/page": "app/admin/manage/games/create/page.js",
-  "/admin/manage/games/view/page": "app/admin/manage/games/view/page.js",
-  "/admin/manage/categories/page": "app/admin/manage/categories/page.js"
+  "/(login)/login/page": "app/(login)/login/page.js",
+  "/(home)/page": "app/(home)/page.js",
+  "/(home)/catalog/page": "app/(home)/catalog/page.js",
+  "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js",
+  "/(login)/register/page": "app/(login)/register/page.js"
 }

@@ -26,7 +26,7 @@ export default function GameCard({name,price,categories}:GameCardProps){
             </div>)}
             <span className="text-[12px] px-2 md:text-base xl:text-2xl">R${price}</span>
             <div className="flex justify-center items-center p-1">
-                <Link href={'/'}  className="bg-[#7e57c2] p-1 text-[12px] rounded-md w-fit md:text-base xl:text-2xl">Ver mais</Link>
+                <Link href={'/game/1'}  className="bg-[#7e57c2] p-1 text-[12px] rounded-md w-fit md:text-base xl:text-2xl">Ver mais</Link>
             </div>
         </div>
 
