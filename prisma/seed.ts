@@ -1,8 +1,29 @@
 import { PrismaClient } from '@prisma/client';
+import { title } from 'process';
 
 const prisma = new PrismaClient();
 
 async function main() {
+
+const categories=[
+  
+]
+
+const games =[
+  await prisma.games.create({
+    data: {
+      gameTitle: 'Exemplo de Jogo',
+      gameDesc: 'Descrição do jogo de exemplo.',
+      gamePrice: 59.99,
+      image: 'https://exemplo.com/imagem.jpg',
+      categories: ['Ação', 'RPG'], 
+      published: true,
+    },
+  }),  
+  
+]
+
+
   const products = [
     {
       title: 'Wireless Mouse',

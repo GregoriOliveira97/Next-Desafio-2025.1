@@ -1,8 +1,16 @@
 import GameCard from "@/components/games-card";
 import Search from "@/components/search";
 import Link from "next/link";
+import getGames from "../../../../actions/home/actions";
+import { Games as GameType } from "../../../../types/home/home";
 
-export default function Games(){
+type GamesProps={
+    posts: GameType[]
+}
+
+export default async function Games({posts}:GamesProps){
+    const games = await getGames
+
     const count=0;
     return(
         <div className="flex flex-col items-center justify-center p-4 gap-4 bg-[#121212] h-full w-full">

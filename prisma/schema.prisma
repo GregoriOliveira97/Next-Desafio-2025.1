@@ -17,3 +17,20 @@ model Product {
   price       Float
   createdAt   DateTime  @default(now())
 }
+
+model Category{
+  id Int @id @default(autoincrement())
+  name String @unique
+  games Games[]
+}
+
+model Games{
+  id Int @id @default(autoincrement())
+  gameTitle String
+  gameDesc String?
+  gamePrice Float
+  gameCreation DateTime @default(now())
+  image String
+  categories Category[]
+  published Boolean @default(false)
+}

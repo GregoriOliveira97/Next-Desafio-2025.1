@@ -2,8 +2,16 @@ import Image from "next/image";
 import Title from "../title";
 import GameCard from "../games-card";
 import Link from "next/link";
+import getGames from "../../../actions/home/actions";
+import { Games } from "../../../types/home/home";
 
-export default function HeroSection(){
+
+
+type GamesProps={
+    posts: Games[]
+}
+
+export default async function HeroSection({posts}:GamesProps){
     return(
         <div className="bg-[#121212] text-white w-full flex flex-col items-center gap-8">
             <div className="bg-[#2a2a2a] text-white w-full flex flex-col items-center gap-6 p-4" >
@@ -48,37 +56,8 @@ export default function HeroSection(){
                 <Title title="Destaques: "/>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full">
                     {/*Trocar por cards(componente) depois*/}
-                    <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}
-                    buttonOff={true} />
-                      <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}
-                    buttonOff={true}/>
-                      <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}
-                    buttonOff={true}/>
-                      <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}
-                    buttonOff={true}/>
-                         <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}
-                    buttonOff={true}/>
-                      <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}
-                    buttonOff={true}/>
-
+                    {posts.map((post,index)=>
+                        <GameCard key={index} post={post}/>)}
                 </div>
                 <Link href={'/catalog'}
                 className="bg-[#7e57c2] text-white rounded-xl px-4 py-2">
@@ -86,6 +65,7 @@ export default function HeroSection(){
                 </Link>
             </div>
 
+            {/*Missao visao e valores*/}
             <div className=" bg-[#2a2a2a] w-full flex flex-col gap-4 p-4 text-center items-center justify-center py-4 text-white">
                     <Title title="Sobre nós:"/>
                     {/*Trocar isso aqui por componente tbm*/}
