@@ -15,6 +15,10 @@ export default async function getGames() {
             categories:true
         }, take: 6
     });
-    
+    return games.map((game) => ({
+        ...game,
+        categories: game.categories.map((cat) => cat.name),
+      }));
+    console.log(games);
     return games;
 }

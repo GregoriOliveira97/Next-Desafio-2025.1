@@ -5,5 +5,5 @@ export type Games={
     gameTitle: string;
     image: string;
     gamePrice: number;
-    categories: Category[];
+    categories: {name:string}[];
 }
