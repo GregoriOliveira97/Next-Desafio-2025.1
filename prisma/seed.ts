@@ -5,23 +5,47 @@ const prisma = new PrismaClient();
 
 async function main() {
 
-const categories=[
-  
-]
+const category1= await prisma.category.create({
+    data:{
+      name: "Ação",
+    },
+  })
+  const category2= await prisma.category.create({
+    data:{
+      name: "RPG",
+    },
+  })
+  const category3= await prisma.category.create({
+    data:{
+      name: "Hack and Slash",
+    },
+  })
+  const category4= await prisma.category.create({
+    data:{
+      name: "Aventura",
+    },
+  })
+
 
 const games =[
-  await prisma.games.create({
-    data: {
+  {
       gameTitle: 'Exemplo de Jogo',
-      gameDesc: 'Descrição do jogo de exemplo.',
+      gameDesc: 'Descrição do jogo de exemplo',
       gamePrice: 59.99,
-      image: 'https://exemplo.com/imagem.jpg',
-      categories: ['Ação', 'RPG'], 
-      published: true,
-    },
-  }),  
+      image: '/imgs/nioh2capa.png',
+      categories: {
+        connect:[{id: category2.id},{id:category3.id}]
+      },
+      published: true
+    
+  }
   
-]
+];
+for (const game of games) {
+  await prisma.games.create({
+    data: game,
+  });
+}
 
 
   const products = [

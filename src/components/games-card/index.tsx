@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Games } from "../../../types/home/home";
+import { Games as GamesType } from "../../../types/home/home";
 
 type GameCardProps={
-    post: Games
+    post: GamesType
     buttonOff?: boolean
 
-}
+} 
 
-export default function GameCard({post,buttonOff=false}:GameCardProps){
+export default async function GameCard({post,buttonOff=false}:GameCardProps){
     
     return(
         <div className="flex flex-col gap-1 w-36 md:w-44 lg:w-56 xl:w-80 text-white shadow-lg group-hover:shadow-2xl duration-200 overflow-hidden">

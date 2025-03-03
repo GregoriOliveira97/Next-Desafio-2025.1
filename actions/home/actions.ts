@@ -12,11 +12,7 @@ export default async function getGames() {
             gameTitle:true,
             image:true,
             gamePrice:true,
-            categories:{
-                select:{
-                    name:true,
-                }
-            }
+            categories:true
         }, take: 6
     });
     
