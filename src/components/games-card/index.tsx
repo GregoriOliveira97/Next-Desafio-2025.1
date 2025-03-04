@@ -22,7 +22,7 @@ export default async function GameCard({post,buttonOff=false}:GameCardProps){
             <div className="flex gap-2 px-2">
                 {post.categories.map((category,index) =>
                     <span className="bg-[#7e57c2] p-1 rounded-sm text-[12px] md:text-base xl:text-2xl" 
-                    key={index}>{category.name}</span>
+                    key={index}>{category}</span>
                 )}
             </div>)}
             <span className="text-[12px] px-2 md:text-base xl:text-2xl">R${post.gamePrice}</span>

@@ -2,15 +2,13 @@
   "node": {
     "1beb7519f118a6b5c781d060b758e52c629a0273": {
       "workers": {
-        "app/(home)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Chome%5C%5Cactions.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!",
-        "app/(home)/catalog/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Chome%5C%5Cactions.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+        "app/(home)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Chome%5C%5Cactions.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/(home)/page": "rsc",
-        "app/(home)/catalog/page": "rsc"
+        "app/(home)/page": "rsc"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "A9HNetzclfFcOGZYpGbRfBgrbiv4SQWOVzOeIci47ss="
+  "encryptionKey": "IeUPWE6T6Z7uwjcoLjwZkTOe64W5n4YhpIq86frOJYQ="
 }

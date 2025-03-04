@@ -34,7 +34,7 @@ const games =[
       gamePrice: 59.99,
       image: '/imgs/nioh2capa.png',
       categories: {
-        connect:[{id: category2.id},{id:category3.id}]
+        connect:[{id: category2.name},{id:category3.name}]
       },
       published: true
     

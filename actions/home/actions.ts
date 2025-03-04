@@ -12,13 +12,13 @@ export default async function getGames() {
             gameTitle:true,
             image:true,
             gamePrice:true,
-            categories:true
+            categories:{
+                select:{
+                    name:true,
+                }
+            }
         }, take: 6
     });
-    return games.map((game) => ({
-        ...game,
-        categories: game.categories.map((cat) => cat.name),
-      }));
     console.log(games);
     return games;
 }

@@ -20,8 +20,8 @@ model Product {
 
 model Category{
   id Int @id @default(autoincrement())
-  name String @unique
-  games Games[]
+  name String 
+  games Games[] @relation("GameCategories")
 }
 
 model Games{
@@ -29,8 +29,7 @@ model Games{
   gameTitle String
   gameDesc String?
   gamePrice Float
-  gameCreation DateTime @default(now())
   image String
-  categories Category[]
+  categories Category[] @relation("GameCategories")
   published Boolean @default(false)
 }
