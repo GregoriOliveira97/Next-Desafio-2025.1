@@ -1,11 +1,11 @@
 import HeroSection from "@/components/heroSection";
 import Image from "next/image";
-import getGames from "../../../actions/home/actions";
-import { Category } from "@prisma/client";
+import getProducts from "../../../actions/home/actions";
+
 
 
 export default async function Home() {
-  const posts= await getGames()
+  const posts= await getProducts()
   return (
     <HeroSection posts={posts}/>
   )

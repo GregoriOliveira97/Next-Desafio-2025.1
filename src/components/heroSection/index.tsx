@@ -2,13 +2,12 @@ import Image from "next/image";
 import Title from "../title";
 import GameCard from "../games-card";
 import Link from "next/link";
-import getGames from "../../../actions/home/actions";
-import { Games } from "../../../types/home/home";
+import { Product } from "@prisma/client";
 
 
 
 type GamesProps={
-    posts: Games[]
+    posts: Product[]
 }
 
 export default async function HeroSection({posts}:GamesProps){

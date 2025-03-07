@@ -5,109 +5,86 @@ const prisma = new PrismaClient();
 
 async function main() {
 
-const category1= await prisma.category.create({
-    data:{
-      name: "Ação",
-    },
-  })
-  const category2= await prisma.category.create({
-    data:{
-      name: "RPG",
-    },
-  })
-  const category3= await prisma.category.create({
-    data:{
-      name: "Hack and Slash",
-    },
-  })
-  const category4= await prisma.category.create({
-    data:{
-      name: "Aventura",
-    },
-  })
-
-
-const games =[
-  {
-      gameTitle: 'Exemplo de Jogo',
-      gameDesc: 'Descrição do jogo de exemplo',
-      gamePrice: 59.99,
-      image: '/imgs/nioh2capa.png',
-      categories: {
-        connect:[{id: category2.name},{id:category3.name}]
-      },
-      published: true
-    
-  }
-  
-];
-for (const game of games) {
-  await prisma.games.create({
-    data: game,
-  });
-}
-
-
   const products = [
     {
-      title: 'Wireless Mouse',
-      description: 'A smooth and responsive wireless mouse.',
-      price: 29.99,
-      createdAt: new Date(),
-    },
-    {
-      title: 'Mechanical Keyboard',
+      title: 'Nioh2- Complete Edition',
       description: 'A durable mechanical keyboard with RGB lighting.',
       price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
     {
-      title: 'Noise Cancelling Headphones',
-      description: 'Comfortable headphones with active noise cancelling.',
-      price: 199.99,
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
     {
-      title: '4K Monitor',
-      description: 'A high-resolution 4K monitor for professional use.',
-      price: 399.99,
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
     {
-      title: 'USB-C Hub',
-      description: 'A versatile USB-C hub with multiple ports.',
-      price: 49.99,
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
     {
-      title: 'Portable SSD',
-      description: 'A fast and portable SSD with 1TB capacity.',
-      price: 129.99,
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
     {
-      title: 'Bluetooth Speaker',
-      description: 'A compact Bluetooth speaker with excellent sound quality.',
-      price: 59.99,
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
     {
-      title: 'Smartwatch',
-      description: 'A stylish smartwatch with fitness tracking features.',
-      price: 149.99,
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
     {
-      title: 'Gaming Chair',
-      description: 'An ergonomic gaming chair with lumbar support.',
-      price: 249.99,
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
     {
-      title: 'Webcam',
-      description: 'A high-definition webcam for video conferencing.',
-      price: 79.99,
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
       createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
+    },
+    {
+      title: 'Nioh2- Complete Edition',
+      description: 'A durable mechanical keyboard with RGB lighting.',
+      price: 89.99,
+      createdAt: new Date(),
+      category: 'RPG',
+      image:'/imgs/nioh2capa.png',
     },
   ];
 

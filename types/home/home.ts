@@ -1,9 +1,8 @@
-import { Category } from "@prisma/client";
 
-export type Games={
-    id: number;
-    gameTitle: string;
-    image: string;
-    gamePrice: number;
-    categories: string[];
+export type Product={
+    id?: number;
+    title?: string;
+    image?: string;
+    price?: number;
+    category?: string;
 }

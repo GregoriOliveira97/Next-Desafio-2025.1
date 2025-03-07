@@ -1,0 +1,16 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[763],{5035:function(e,t,n){Promise.resolve().then(n.t.bind(n,231,23)),Promise.resolve().then(n.bind(n,3819))},7138:function(e,t,n){"use strict";n.d(t,{default:function(){return i.a}});var r=n(231),i=n.n(r)},3819:function(e,t,n){"use strict";n.d(t,{DeleteButton:function(){return o},EditGameButton:function(){return c},ViewGameButton:function(){return l},default:function(){return a}});var r=n(7437);let i=(0,n(6497).Z)("Eye",[["path",{d:"M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0",key:"1nclc0"}],["circle",{cx:"12",cy:"12",r:"3",key:"1v7zrd"}]]);var u=n(7138);function a(e){let{id:t}=e;return(0,r.jsx)(u.default,{href:"/admin/manage/categories/edit/".concat(t),children:(0,r.jsx)("button",{className:" bg-green-500 font-medium p-1 text-white/90 hover:underline",children:"Editar"})})}function o(e){let{id:t}=e;return(0,r.jsx)("button",{className:"bg-red-500 font-medium p-1 text-white/90 hover:underline",children:"Excluir"})}function c(e){let{id:t}=e;return(0,r.jsx)(u.default,{href:"/admin/manage/games/edit",children:(0,r.jsx)("button",{className:" bg-green-500 font-medium p-1 text-white/90 hover:underline",children:"Editar"})})}function l(e){let{id:t}=e;return(0,r.jsx)(u.default,{href:"/admin/manage/games/view",children:(0,r.jsx)("button",{className:" bg-[#7e57c2] font-medium p-1 text-white/90 hover:underline",children:(0,r.jsx)(i,{})})})}},6497:function(e,t,n){"use strict";n.d(t,{Z:function(){return c}});var r=n(2265);/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let i=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),u=function(){for(var e=arguments.length,t=Array(e),n=0;n<e;n++)t[n]=arguments[n];return t.filter((e,t,n)=>!!e&&""!==e.trim()&&n.indexOf(e)===t).join(" ").trim()};/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var a={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let o=(0,r.forwardRef)((e,t)=>{let{color:n="currentColor",size:i=24,strokeWidth:o=2,absoluteStrokeWidth:c,className:l="",children:s,iconNode:d,...f}=e;return(0,r.createElement)("svg",{ref:t,...a,width:i,height:i,stroke:n,strokeWidth:c?24*Number(o)/Number(i):o,className:u("lucide",l),...f},[...d.map(e=>{let[t,n]=e;return(0,r.createElement)(t,n)}),...Array.isArray(s)?s:[s]])}),c=(e,t)=>{let n=(0,r.forwardRef)((n,a)=>{let{className:c,...l}=n;return(0,r.createElement)(o,{ref:a,iconNode:t,className:u("lucide-".concat(i(e)),c),...l})});return n.displayName="".concat(e),n}}},function(e){e.O(0,[231,971,23,744],function(){return e(e.s=5035)}),_N_E=e.O()}]);

@@ -2,23 +2,15 @@
 
 import prisma from "@/lib/db"
 
-export default async function getGames() {
-    const games= await prisma.games.findMany({
-        where:{
-            published: true
-        },
+export default async function getProducts() {
+    const products= await prisma.product.findMany({
         select: {
             id:true,
-            gameTitle:true,
+            title:true,
+            price:true,
             image:true,
-            gamePrice:true,
-            categories:{
-                select:{
-                    name:true,
-                }
-            }
+            category:true,
         }, take: 6
     });
-    console.log(games);
-    return games;
+    return products;
 }
