@@ -1,3 +1,5 @@
+"use server"
+
 import GameCard from "@/components/games-card";
 import Search from "@/components/search";
 import Link from "next/link";
@@ -11,9 +13,11 @@ type GamesProps={
 export default async function Games({posts}:GamesProps){
     const count=1;
     posts= await getProducts()
+
+    
     return(
         <div className="flex flex-col items-center justify-center p-4 gap-4 bg-[#121212] h-full w-full">
-            <Search count={count}/>
+            <Search />
             {count == 0 ?(
                 <div className="flex flex-col gap-4">
                     <span className="text-white/70 text-sm text-center lg:text-base font-extrabold">
