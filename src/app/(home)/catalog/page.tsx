@@ -2,6 +2,7 @@ import GameCard from "@/components/games-card";
 import Search from "@/components/search";
 import Link from "next/link";
 import {  Product } from "../../../../types/home/home";
+import getProducts from "../../../../actions/home/actions";
 
 type GamesProps={
     posts: Product[]
@@ -9,6 +10,7 @@ type GamesProps={
 
 export default async function Games({posts}:GamesProps){
     const count=1;
+    posts= await getProducts()
     return(
         <div className="flex flex-col items-center justify-center p-4 gap-4 bg-[#121212] h-full w-full">
             <Search count={count}/>
@@ -24,7 +26,7 @@ export default async function Games({posts}:GamesProps){
             ):(
                 <div className="grid gap-4 grid-flow-row grid-cols-2 md:grid-flow-col grid-rows-2 ">
                    {posts.map((post,index)=>
-                    <GameCard key={index} post={post}/>)
+                    <GameCard key={index} post={post} buttonOff={true}/>)
                     }
                 </div>
             )}
