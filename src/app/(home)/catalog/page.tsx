@@ -30,7 +30,9 @@ export default async function Games({posts}:GamesProps){
             ):(
                 <div className="grid gap-4 grid-flow-row grid-cols-2 md:grid-flow-col grid-rows-2 ">
                    {posts.map((post,index)=>
-                    <GameCard key={index} post={post} buttonOff={true}/>)
+                        <Link href={`/game/${post.id}`}>
+                            <GameCard key={index} post={post} buttonOff={true}/>
+                        </Link>)
                     }
                 </div>
             )}
