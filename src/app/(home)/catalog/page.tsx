@@ -1,63 +1,31 @@
 import GameCard from "@/components/games-card";
 import Search from "@/components/search";
 import Link from "next/link";
-import getGames from "../../../../actions/home/actions";
-import { Games as GameType } from "../../../../types/home/home";
+import {  Product } from "../../../../types/home/home";
 
 type GamesProps={
-    posts: GameType[]
+    posts: Product[]
 }
 
 export default async function Games({posts}:GamesProps){
-    const games = await getGames
-
-    const count=0;
+    const count=1;
     return(
         <div className="flex flex-col items-center justify-center p-4 gap-4 bg-[#121212] h-full w-full">
             <Search count={count}/>
-            {count!=0 ?(
+            {count == 0 ?(
                 <div className="flex flex-col gap-4">
-                    <span className="text-white/70 text-xl text-center lg:text-2xl font-extrabold">
+                    <span className="text-white/70 text-sm text-center lg:text-base font-extrabold">
                         Nenhum jogo encontrado
                     </span>
-                    <span className="text-white/70 text-base text-center lg:text-xl">
+                    <span className="text-white/70 text-base text-center lg:text-sm">
                         Tente outra coisa ou navegue em <Link href={'/games'}>Games</Link>
                     </span>
                 </div>
             ):(
                 <div className="grid gap-4 grid-flow-row grid-cols-2 md:grid-flow-col grid-rows-2 ">
-                    <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}/>
-                      <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}/>
-                      <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}/>
-                      <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}/>
-                                       <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}/>
-                                       <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}/>
-                                       <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}/>
-                                       <GameCard
-                    name="Nioh2- Complete Edition"
-                    price={199.90} 
-                    categories={['RPG','Ação']}/>
+                   {posts.map((post,index)=>
+                    <GameCard key={index} post={post}/>)
+                    }
                 </div>
             )}
             {/*Paginação falta aqui*/ }

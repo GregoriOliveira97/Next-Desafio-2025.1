@@ -1,5 +1,5 @@
 type TitleProps ={
-    title: string;
+    title?: string;
     subtitle?:string
 }
 export default function Title({title, subtitle}:TitleProps){
