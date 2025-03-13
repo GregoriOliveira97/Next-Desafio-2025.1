@@ -6,16 +6,15 @@ import Link from "next/link";
 import {  Product } from "../../../../types/home/home";
 import getProducts from "../../../../actions/home/actions";
 import SecondarySearch from "@/components/search/secondary-search";
+import Pagination from "@/components/pagination";
 
 type GamesProps={
-    posts: Product[]
+    posts:Product[]
 }
 
 export default async function Games({posts}:GamesProps){
     const count=0;
-    posts= await getProducts()
-
-    
+    posts= await getProducts();
     return(
         <div className="flex flex-col items-center justify-center p-4 gap-4 bg-[#121212] h-full w-full">
             <SecondarySearch count={count} />
@@ -37,7 +36,7 @@ export default async function Games({posts}:GamesProps){
                     }
                 </div>
             )}
-            {/*Paginação falta aqui*/ }
+            {/* <Pagination totalPages={totalPages}/> */}
         </div>
         
     )

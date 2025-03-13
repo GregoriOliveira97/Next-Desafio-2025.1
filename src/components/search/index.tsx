@@ -7,10 +7,11 @@ import SecondarySearch from "./secondary-search";
 import Link from "next/link";
 import GameCard from "../games-card/search-card";
 import { Product } from "../../../types/home/home";
+import Pagination from "../pagination";
 
 
 
-export default function SearchPage({games, count}:{games: Product[], count:number}){
+export default function SearchPage({games, count, totalPages}:{games: Product[], count:number, totalPages:number}){
     const searchParams= useSearchParams()
 
     const router= useRouter()
@@ -43,13 +44,16 @@ export default function SearchPage({games, count}:{games: Product[], count:numbe
                 </span>
             </div>
         ):(
-            <div className=" w-full flex flex-col flex-wrap justify-center items-center gap-4">
+            <div className="w-full flex flex-col flex-wrap justify-center items-center gap-4">
                 {games.map((game,index)=>(
-                    <Link href={`/game/${index+11}`}>
+                    <Link className="w-full" href={`/game/${index+11}`}>
                         <GameCard key={index} post={game}/>
                     </Link>
 
                 ))}
+                {totalPages>1 &&(
+                    <Pagination totalPages={totalPages}/>
+                )}
             </div>
         )}
      </div>

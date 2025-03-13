@@ -50,7 +50,6 @@ export default function SecondarySearch({count}:SecondarySearchProps){
                     onChange={(e)=>setSecondarySearchTerm(e.target.value)}
                      />
                 </div>
-                <span className="text-white/70 ">Total de {count} jogos encontrados</span>
 
             </div>
 

@@ -23,6 +23,6 @@ export async function fetchFilteredGames(query: string, currentPage: number) {
         }, 
     });
     const totalPages = Math.ceil(count/itemsPerPage)
-    return{games,count};
+    return{games,count,totalPages};
 
 }
