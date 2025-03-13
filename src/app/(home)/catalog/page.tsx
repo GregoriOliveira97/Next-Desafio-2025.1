@@ -9,16 +9,21 @@ import SecondarySearch from "@/components/search/secondary-search";
 import Pagination from "@/components/pagination";
 
 type GamesProps={
-    posts:Product[]
+    currentPage:number;
+    posts:Product[];
+    totalPagesN:number;
 }
 
-export default async function Games({posts}:GamesProps){
-    const count=0;
-    posts= await getProducts();
+export default async function Games({posts,currentPage,totalPagesN}:GamesProps){
+    const{products,totalPages}= await getProducts();
+    posts=products;
+    const count = posts.length;
+
+
     return(
         <div className="flex flex-col items-center justify-center p-4 gap-4 bg-[#121212] h-full w-full">
             <SecondarySearch count={count} />
-            {count != 0 ?(
+            {count === 0 ?(
                 <div className="flex flex-col gap-4">
                     <span className="text-white/70 text-sm text-center lg:text-base font-extrabold">
                         Nenhum jogo encontrado
@@ -36,7 +41,7 @@ export default async function Games({posts}:GamesProps){
                     }
                 </div>
             )}
-            {/* <Pagination totalPages={totalPages}/> */}
+            <Pagination totalPages={totalPages}/>
         </div>
         
     )

@@ -5,8 +5,10 @@ import getProducts from "../../../actions/home/actions";
 
 
 export default async function Home() {
+  
+  const{products,totalPages}= await getProducts();
   const posts= await getProducts()
   return (
-    <HeroSection posts={posts}/>
+    <HeroSection posts={products} />
   )
 }
