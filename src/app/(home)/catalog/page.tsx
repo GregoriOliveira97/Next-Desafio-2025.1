@@ -5,20 +5,21 @@ import Search from "@/components/search";
 import Link from "next/link";
 import {  Product } from "../../../../types/home/home";
 import getProducts from "../../../../actions/home/actions";
+import SecondarySearch from "@/components/search/secondary-search";
 
 type GamesProps={
     posts: Product[]
 }
 
 export default async function Games({posts}:GamesProps){
-    const count=1;
+    const count=0;
     posts= await getProducts()
 
     
     return(
         <div className="flex flex-col items-center justify-center p-4 gap-4 bg-[#121212] h-full w-full">
-            <Search />
-            {count == 0 ?(
+            <SecondarySearch count={count} />
+            {count != 0 ?(
                 <div className="flex flex-col gap-4">
                     <span className="text-white/70 text-sm text-center lg:text-base font-extrabold">
                         Nenhum jogo encontrado

@@ -11,8 +11,8 @@ type GameCardProps={
 export default async function GameCard({post,buttonOff=false}:GameCardProps){
     
     return(
-        <div className="flex flex-col gap-1 w-36 md:w-44 lg:w-56 xl:w-80 text-white shadow-lg group-hover:shadow-2xl duration-200 overflow-hidden">
-            <Image src={post.image}
+        <div className="flex flex-col gap-1 w-36 md:w-44 lg:w-56 xl:w-80 bg-[#333333] text-white shadow-lg group-hover:shadow-2xl duration-200 overflow-hidden">
+            <Image src={post.image|| "/imgs/nioh2capa.png"}
             alt="Capa do jogo"
             width={904}
             height={904}
