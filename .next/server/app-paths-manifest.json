@@ -1,7 +1,6 @@
 {
   "/(home)/page": "app/(home)/page.js",
+  "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js",
   "/(home)/catalog/page": "app/(home)/catalog/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/admin/manage/games/page": "app/admin/manage/games/page.js",
-  "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js"
+  "/(home)/search/page": "app/(home)/search/page.js"
 }
