@@ -14,8 +14,8 @@ type GamesProps={
     totalPagesN:number;
 }
 
-export default async function Games({posts,currentPage,totalPagesN}:GamesProps){
-    const{products,totalPages}= await getProducts();
+export default async function Games({posts,currentPage=1}:GamesProps){
+    const{products,totalPages}= await getProducts(currentPage);
     posts=products;
     const count = posts.length;
 
