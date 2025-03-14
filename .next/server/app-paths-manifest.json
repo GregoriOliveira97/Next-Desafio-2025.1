@@ -1,7 +1,5 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/(home)/page": "app/(home)/page.js",
-  "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js",
   "/admin/manage/games/edit/[id]/page": "app/admin/manage/games/edit/[id]/page.js",
   "/admin/manage/games/view/[id]/page": "app/admin/manage/games/view/[id]/page.js",
   "/admin/manage/games/page": "app/admin/manage/games/page.js",
