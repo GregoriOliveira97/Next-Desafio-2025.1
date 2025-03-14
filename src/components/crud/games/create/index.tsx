@@ -15,7 +15,7 @@ export default function CreateGame(){
                     placeholder="Imagem"
                     name="create-game-image" />
                      <div className="flex justify-center"><Image
-                        src={'/imgs/nioh2capa.png'}
+                        src={'/imgs/placeholder.png'}
                         alt="Imagem do jogo default"
                         width={240}
                         height={240}/>

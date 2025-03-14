@@ -33,7 +33,7 @@ export function EditGameButton({id}:{id: number}){
 }
 export function ViewGameButton({id}:{id: number}){
     return(
-        <Link href={`/admin/manage/games/view`}>
+        <Link href={`/admin/manage/games/view/${id}`}>
             <button className=" bg-[#7e57c2] font-medium p-1 text-white/90 hover:underline">
                 <Eye/>
             </button>

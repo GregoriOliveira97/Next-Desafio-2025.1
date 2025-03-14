@@ -14,9 +14,9 @@ export default async function GameCard({post,buttonOff=false}:GameCardProps){
         <div className="flex flex-col gap-1 w-36 md:w-44 lg:w-56 xl:w-80 bg-[#333333] text-white shadow-lg group-hover:shadow-2xl duration-200 overflow-hidden">
             <Image src={post.image|| "/imgs/nioh2capa.png"}
             alt="Capa do jogo"
-            width={904}
-            height={904}
-            className="object-fit h-30 w-full md:h-42"/>
+            width={224}
+            height={224}
+            className="object-fit h-30 w-full md:h-42 md:w-42"/>
             <span className="text-sm px-2 md:text-base xl:text-2xl">{post.title}</span>
            
             <div className="flex gap-2 px-2">

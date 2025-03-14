@@ -1,17 +1,24 @@
+"use client"
 
 import Image from "next/image"
 import { Product } from "../../../../../types/home/home"
-import { IndividualGame } from "../../../../../types/data"
 import { editGame } from "../../../../../actions/admin/games/actions"
+import { useState } from "react";
 
-const gameName =  'Game name default'
-const gamePrice = 'Game price default'
-const gameImg = 'Devera ser imagem aqui'
-const gameDesc = 'Game desc default'
-const gameCateory= 'Game category'
 
 export default function EditGame({game}:{game:Product}){
+    const [imagePreview, setImagePreview] = useState<string>(game.image);
     const updategameWithId=editGame.bind(null,game.id)
+    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setImagePreview(reader.result as string); // Atualiza a prévia com a nova imagem
+            };
+            reader.readAsDataURL(file); // Lê o arquivo como URL
+        }
+    };
     return(
         <div className="w-full z-2 lg:w-9/12 xl:w-7/12 2xl:w-5/12 p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4
         text-white">
@@ -30,6 +37,13 @@ export default function EditGame({game}:{game:Product}){
                         width={240}
                         height={240}/>
                     </div>
+                    <input
+                    type="file"
+                    accept="image/*"
+                    className="bg-[#3a3a3a] border-1 p-2 rounded-md text-white"
+                    name="edit-game-image"
+                    onChange={(e) => handleImageChange(e)}
+                     />
                     <label>Preço</label>
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" 
                     name="edit-game-price"
