@@ -1,7 +1,8 @@
 import Link from "next/link";
 import EditButton, { DeleteButton, EditGameButton, ViewGameButton } from "../button";
+import { Product } from "../../../../types/home/home";
 
-export default function ManageGamesTable(){
+export default function ManageGamesTable({games,count}:{games:Product[], count:number}){
     return(
         <div className="w-full z-2 p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4">
             <div className="flex  flex-wrap items-center w-full justify-between">
@@ -26,6 +27,9 @@ export default function ManageGamesTable(){
                                 </th>
                                 <th scope="col" className="px-6 py-3">
                                     Preço
+                                </th>                                
+                                <th scope="col" className="px-6 py-3">
+                                    Categoria
                                 </th>
                                 <th scope="col" className="px-6 py-3">
                                     Ações
@@ -33,22 +37,28 @@ export default function ManageGamesTable(){
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className=" bg-[#2a2a2a] text-white/90 border-b border-gray-700">
+                            {games.map((game,index)=>(
+                                <tr key={index} className=" bg-[#2a2a2a] text-white/90 border-b border-gray-700">
                                 <th scope="col" className="px-6 py-3">
-                                    ID
+                                    {game.id}
                                 </th>
                                 <th scope="col" className="px-6 py-3">
-                                    Nome
+                                    {game.title}
                                 </th>
                                 <th scope="col" className="px-6 py-3">
-                                    <span className="hover:underline">R$199,90</span>
+                                    <span className="hover:underline">R${game.price}</span>
+                                </th>
+                                <th scope="col" className="px-6 py-3">
+                                    <span className="hover:underline">{game.category}</span>
                                 </th>
                                 <th scope="col" className="px-6 py-3 flex items-center gap-4">
-                                    <ViewGameButton id={1}/>
-                                    <EditGameButton id={1}/>
-                                    <DeleteButton id={1}/>
+                                    <ViewGameButton id={game.id}/>
+                                    <EditGameButton id={game.id}/>
+                                    <DeleteButton id={game.id}/>
                                 </th>
                             </tr>
+                            ))}
+
                         </tbody>
                     </table>
                 </div>

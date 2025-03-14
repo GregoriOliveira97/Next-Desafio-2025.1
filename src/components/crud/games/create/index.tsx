@@ -1,27 +1,31 @@
 import Image from "next/image";
+import { createGame } from "../../../../../actions/admin/games/actions";
 
 export default function CreateGame(){
     return(
         <div className="w-full z-2 lg:w-9/12 xl:w-7/12 2xl:w-5/12 p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4
         text-white">
-            <form className="flex flex-col gap-4" autoComplete="off">
+            <form className="flex flex-col gap-4" autoComplete="off" action={createGame}>
                 <div className="flex flex-col gap-1">
                     <label>Nome do Game</label>
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-name"
                     placeholder="Nome" />
                     <label>Imagem</label>
+                    <input type="file" className="bg-[#3a3a3a] border-1 p-2 rounded-md" 
+                    placeholder="Imagem"
+                    name="create-game-image" />
                      <div className="flex justify-center"><Image
                         src={'/imgs/nioh2capa.png'}
                         alt="Imagem do jogo default"
                         width={240}
                         height={240}/>
                     </div>
-                    <label>Categorias</label>
-                    <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-categories"
-                    placeholder="RPG,Ação,Hack and Slash" />
                     <label>Preço</label>
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-price"
                     placeholder="Preço" />
+                    <label>Categoria</label>
+                    <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-category"
+                    placeholder="RPG,Ação,Hack and Slash" />
                     <label>Descrição</label>
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" name="create-game-desc"
                     placeholder="Descrição" />

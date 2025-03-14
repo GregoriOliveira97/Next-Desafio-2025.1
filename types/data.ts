@@ -1,8 +1,8 @@
 export type IndividualGame={
-    id?: number;
-    title?: string;
+    id: number;
+    title: string;
     description: string|null;
-    image?: string;
-    price?: number;
+    image: string;
+    price: number;
     category: string;
-}|null;
+};

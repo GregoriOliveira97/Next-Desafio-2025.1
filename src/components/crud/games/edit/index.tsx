@@ -1,25 +1,31 @@
+
 import Image from "next/image"
+import { Product } from "../../../../../types/home/home"
+import { IndividualGame } from "../../../../../types/data"
+import { editGame } from "../../../../../actions/admin/games/actions"
 
 const gameName =  'Game name default'
 const gamePrice = 'Game price default'
 const gameImg = 'Devera ser imagem aqui'
 const gameDesc = 'Game desc default'
+const gameCateory= 'Game category'
 
-export default function EditGame(){
+export default function EditGame({game}:{game:IndividualGame}){
+    const updategameWithId=editGame.bind(null,game.id)
     return(
         <div className="w-full z-2 lg:w-9/12 xl:w-7/12 2xl:w-5/12 p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4
         text-white">
-            <form className="flex flex-col gap-4" autoComplete="off">
+            <form className="flex flex-col gap-4" autoComplete="off" action={updategameWithId}>
                 <div className="flex flex-col gap-1">
                     <label>Nome da Game</label>
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" 
                     name="edit-game-name"
                     placeholder="Nome"
-                    defaultValue={gameName}
+                    defaultValue={game.title}
                      />
                      <label>Imagem</label>
                      <div className="flex justify-center"><Image
-                        src={'/imgs/nioh2capa.png'}
+                        src={game.image}
                         alt="Imagem do jogo default"
                         width={240}
                         height={240}/>
@@ -28,13 +34,19 @@ export default function EditGame(){
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" 
                     name="edit-game-price"
                     placeholder="Preço"
-                    defaultValue={gamePrice}
+                    defaultValue={game.price}
+                     />
+                     <label>Categoria</label>
+                        <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" 
+                        name="edit-game-category"
+                        placeholder="Categoria"
+                        defaultValue={game.category}
                      />
                      <label>Descrição</label>
                     <input className="bg-[#3a3a3a] border-1 p-2 rounded-md" 
-                    name="edit-game-price"
+                    name="edit-game-desc"
                     placeholder="Descrição"
-                    defaultValue={gameDesc}
+                    defaultValue={game.description||''}
                      />
                 </div>
                 <div className="w-full flex justify-end">

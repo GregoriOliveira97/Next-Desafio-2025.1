@@ -8,7 +8,6 @@ import { useState } from "react"
 const LinksSidebar=[
     {href:'/admin', label: 'Dashboard', icon: LayoutDashboard},
     {href:'/admin/manage/games', label: 'Games', icon: Gamepad2},
-    {href:'/admin/manage/categories', label: 'Categorias', icon: ChartBarBig},
     {href:'/', label: 'Página Inicial', icon: HomeIcon}
 ]
 

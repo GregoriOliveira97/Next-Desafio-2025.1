@@ -25,6 +25,80 @@
       "layer": {
         "app/(home)/catalog/page": "rsc"
       }
+    },
+    "3297996e49c15373e3c34d179ee028b5db15ab7e": {
+      "workers": {
+        "app/admin/manage/games/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/view/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/create/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/edit/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/manage/games/page": "rsc",
+        "app/admin/manage/games/view/page": "rsc",
+        "app/admin/manage/games/create/page": "rsc",
+        "app/admin/manage/games/edit/page": "rsc"
+      }
+    },
+    "56e01402129622ff9903b0b03edc2779a0ac8059": {
+      "workers": {
+        "app/(home)/game/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5CindividualGame%5C%5Cactions.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(home)/game/[id]/page": "rsc"
+      }
+    },
+    "4f8ee67edbfdeb65ed946530ef7d576f8f3b26aa": {
+      "workers": {
+        "app/admin/manage/games/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/view/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/create/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/edit/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/manage/games/page": "rsc",
+        "app/admin/manage/games/view/page": "rsc",
+        "app/admin/manage/games/create/page": "rsc",
+        "app/admin/manage/games/edit/page": "rsc"
+      }
+    },
+    "7c274e6e14adcc95f2d9ce27ced6514f15a93779": {
+      "workers": {
+        "app/admin/manage/games/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/view/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/create/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/edit/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/manage/games/page": "rsc",
+        "app/admin/manage/games/view/page": "rsc",
+        "app/admin/manage/games/create/page": "rsc",
+        "app/admin/manage/games/edit/page": "rsc"
+      }
+    },
+    "1e4f39d3055c1dd38eb841614834e417cd2c0502": {
+      "workers": {
+        "app/admin/manage/games/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/create/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/edit/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/manage/games/page": "rsc",
+        "app/admin/manage/games/create/page": "rsc",
+        "app/admin/manage/games/edit/page": "rsc"
+      }
+    },
+    "d6c8d8cc399f679b56389c8880e4d3ed1370704d": {
+      "workers": {
+        "app/admin/manage/games/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/create/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!",
+        "app/admin/manage/games/edit/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cgrego%5C%5CDesktop%5C%5CCODE%20PROJETOS%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cgames%5C%5Cactions.ts%22%2C%5B%22fetchGamebyId%22%2C%22fetchGames%22%2C%22deleteGame%22%2C%22createGame%22%2C%22editGame%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/manage/games/page": "rsc",
+        "app/admin/manage/games/create/page": "rsc",
+        "app/admin/manage/games/edit/page": "rsc"
+      }
     }
   },
   "edge": {},

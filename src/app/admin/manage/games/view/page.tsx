@@ -1,6 +1,8 @@
 
 import Image from 'next/image';
-export default function Page(){
+import { fetchGames } from '../../../../../../actions/admin/games/actions';
+export default async function Page(){
+    const {games,count}= await fetchGames()
     return (
         <div className="w-full lg:w-9/12 xl:w-7/12 2xl:w-5/12 p-4 border-2 border-gray-700 rounded-md 
         text-white bg-[#1a1a1a]">
