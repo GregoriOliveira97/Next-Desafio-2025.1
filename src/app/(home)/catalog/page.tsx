@@ -1,12 +1,8 @@
-"use server"
 
-import GameCard from "@/components/games-card";
-import Search from "@/components/search";
-import Link from "next/link";
 import {  Product } from "../../../../types/home/home";
 import getProducts from "../../../../actions/home/actions";
-import SecondarySearch from "@/components/search/secondary-search";
-import Pagination from "@/components/pagination";
+
+import Catalog from "@/components/catalog-section";
 
 type GamesProps={
     currentPage:number;
@@ -14,35 +10,20 @@ type GamesProps={
     totalPagesN:number;
 }
 
-export default async function Games({posts,currentPage=1}:GamesProps){
-    const{products,totalPages}= await getProducts(currentPage);
-    posts=products;
-    const count = posts.length;
+export default async function Games({
+    searchParams
+}:{
+    searchParams:{
+        page?:string
+    }
+}){
+ 
+    const currentPage=Number(searchParams.page)||1;
+    const{products,totalPages}= await getProducts(currentPage)
 
 
     return(
-        <div className="flex flex-col items-center justify-center p-4 gap-4 bg-[#121212] h-full w-full">
-            <SecondarySearch count={count} />
-            {count === 0 ?(
-                <div className="flex flex-col gap-4">
-                    <span className="text-white/70 text-sm text-center lg:text-base font-extrabold">
-                        Nenhum jogo encontrado
-                    </span>
-                    <span className="text-white/70 text-base text-center lg:text-sm">
-                        Tente outra coisa ou navegue em <Link href={'/games'}>Games</Link>
-                    </span>
-                </div>
-            ):(
-                <div className="grid gap-4 grid-flow-row grid-cols-2 md:grid-flow-col grid-rows-2 ">
-                   {posts.map((post,index)=>
-                        <Link href={`/game/${post.id}`}>
-                            <GameCard key={index} post={post} buttonOff={true}/>
-                        </Link>)
-                    }
-                </div>
-            )}
-            <Pagination totalPages={totalPages}/>
-        </div>
+    <Catalog currentPage={currentPage} posts={products} totalPagesN={totalPages}/>
         
     )
 }

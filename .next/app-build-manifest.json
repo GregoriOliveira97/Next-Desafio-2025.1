@@ -20,16 +20,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(home)/catalog/page.js"
-    ],
-    "/(home)/game/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(home)/game/[id]/page.js"
-    ],
-    "/(home)/search/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(home)/search/page.js"
     ]
   }
 }
