@@ -18,6 +18,9 @@ export async function fetchGames() {
 }
 
 export async function deleteGame(id:number) {
+    if (!id) {
+        throw new Error("ID inválido ou ausente.");
+    }
     await prisma.product.delete({
         where:{id}
     })

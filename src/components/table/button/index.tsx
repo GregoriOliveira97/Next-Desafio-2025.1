@@ -24,7 +24,7 @@ export  function DeleteButton({id}:{id: number}){
 
 export function EditGameButton({id}:{id: number}){
     return(
-        <Link href={`/admin/manage/games/edit`}>
+        <Link href={`/admin/manage/games/edit/${id}`}>
             <button className=" bg-green-500 font-medium p-1 text-white/90 hover:underline">
                 Editar
             </button>

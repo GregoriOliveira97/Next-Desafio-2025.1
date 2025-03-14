@@ -1,6 +1,6 @@
 import EditGame from "@/components/crud/games/edit";
 import DashboardTile from "@/components/dashboard/dashboard-title";
-import { fetchGamebyId } from "../../../../../../actions/admin/games/actions";
+import { fetchGamebyId } from "../../../../../../../actions/admin/games/actions";
 
 export default async function Page(
     {params}:
@@ -9,7 +9,7 @@ export default async function Page(
     
     }
 ){
-    const id= params.id
+    const id= Number(params.id)
     const game= await fetchGamebyId(id);
     return(
         <div className="w-full space-y-12">

@@ -10,7 +10,7 @@ const gameImg = 'Devera ser imagem aqui'
 const gameDesc = 'Game desc default'
 const gameCateory= 'Game category'
 
-export default function EditGame({game}:{game:IndividualGame}){
+export default function EditGame({game}:{game:Product}){
     const updategameWithId=editGame.bind(null,game.id)
     return(
         <div className="w-full z-2 lg:w-9/12 xl:w-7/12 2xl:w-5/12 p-4 border-2 border-gray-700 rounded-md flex flex-col gap-4

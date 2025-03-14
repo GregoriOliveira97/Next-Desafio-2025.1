@@ -1,7 +1,6 @@
 {
   "/admin/manage/games/page": "app/admin/manage/games/page.js",
-  "/admin/manage/games/create/page": "app/admin/manage/games/create/page.js",
   "/(home)/catalog/page": "app/(home)/catalog/page.js",
   "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js",
-  "/admin/manage/games/edit/page": "app/admin/manage/games/edit/page.js"
+  "/admin/manage/games/edit/[id]/page": "app/admin/manage/games/edit/[id]/page.js"
 }
