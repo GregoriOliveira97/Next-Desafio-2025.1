@@ -8,7 +8,7 @@ export const formSchema= z.object({
         message:"Por favor insira um email válido."
     }),
     message: z.string().max(500, {
-        message:"Por favor insira um email válido."
+        message:"Mensagem muito grande."
     })
 })
 

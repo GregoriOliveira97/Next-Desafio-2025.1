@@ -21,7 +21,7 @@ export default function InputCard({title,placeHolder}:InputProps){
 }
 export function NameCard({title,placeHolder}:InputProps){
     return(
-        <div className="bg-[#2a2a2a] p-2 flex flex-col gap-2 text-white rounded-md">
+    <div className="bg-[#2a2a2a] p-2 flex flex-col gap-2 text-white rounded-md">
         <label htmlFor="name" className="text-xl">{title}</label>
         <input type="name" id="text"
         placeholder={placeHolder} 
@@ -31,7 +31,7 @@ export function NameCard({title,placeHolder}:InputProps){
 }
 export function EmailCard({title,placeHolder}:InputProps){
     return(
-        <div className="bg-[#2a2a2a] p-2 flex flex-col gap-2 text-white rounded-md">
+    <div className="bg-[#2a2a2a] p-2 flex flex-col gap-2 text-white rounded-md">
         <label htmlFor="email" className="text-xl">{title}</label>
         <input type="email" id="email"
         placeholder={placeHolder} 
