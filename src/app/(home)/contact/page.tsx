@@ -16,8 +16,19 @@ export default function Page(){
         }
     })
     const onSubmit= async (data:FormValue)=>{
-        console.log(data)
-        reset()
+        const response = await fetch("/api/send", {
+            method: "POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(data),
+        })
+        if(response.ok){
+            reset()
+        }
+        else{
+            console.log("Houve erro")
+        }
     }
     return(
         <div className=" w-full flex flex-col items-center md:items-start justify-center md:flex-row p-4 gap-4
