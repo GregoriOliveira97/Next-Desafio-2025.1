@@ -4,9 +4,12 @@ import Title from "@/components/title";
 import { formSchema, FormValue } from "@/schema/form";
 import { useForm } from "react-hook-form";
 import {zodResolver} from  "@hookform/resolvers/zod"
+import { useState } from "react";
 
 
 export default function Page(){
+    const[isSubmitSuccessful, setIsSubmitSuccessful] = useState(false)
+    const [error,setError]= useState<string | null>(null)
     const {handleSubmit, register,formState:{errors},reset}= useForm({
         resolver: zodResolver(formSchema),
         defaultValues:{
@@ -24,16 +27,20 @@ export default function Page(){
             body: JSON.stringify(data),
         })
         if(response.ok){
+            setIsSubmitSuccessful(true)
             reset()
         }
         else{
-            console.log("Houve erro")
+            setError("Erro ao enviar email")
         }
     }
     return(
         <div className=" w-full flex flex-col items-center md:items-start justify-center md:flex-row p-4 gap-4
          text-white min-h-screen bg-[#1a1a1a]">
             <section className="bg-[#2a2a2a] flex flex-col gap-2 p-8 w-full md:w-7/12 rounded-md">
+                {isSubmitSuccessful && <span className="text-green-500">Email enviado!</span>}
+                {error && <span className="text-red-500">Erro ao enviar email!</span>}
+
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="bg-[#2a2a2a] p-2 flex flex-col gap-2 text-white rounded-md">
                         <label htmlFor="name" className="text-xl">Nome</label>
