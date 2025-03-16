@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { IndividualGame } from "../../../../types/data";
+import Link from "next/link";
 
 export default function View({game}:{game:IndividualGame}){
     return(
@@ -42,7 +43,12 @@ export default function View({game}:{game:IndividualGame}){
                             <span>{game.description}</span>
                         </div>
                     </div>
+
                 </div>
+                <Link href={"/admin/manage/games"} className="bg-[#7e57c2] p-1 text-[12px] rounded-md w-fit md:text-base
+                     xl:text-2xl">
+                    Voltar
+                </Link>
             </div>
         </div>
     )
