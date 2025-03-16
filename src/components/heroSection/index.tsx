@@ -22,7 +22,9 @@ export default async function HeroSection({posts}:GamesProps){
             <div className="bg-[#2a2a2a] text-white w-full flex flex-col items-center gap-6 p-4" >
                 <Title title="Descubra novos mundos"/>
                 <h2 className=" text-sm md:text-base lg:text-xl">Os melhores jogos pelos melhores preços, pra você sempre estar com as Skills em dia!</h2>
-                <button className="bg-[#7e57c2] text-white rounded-xl px-4 py-2">Ver ofertas</button>
+               <Link href={"/catalog"}>
+               <button className="bg-[#7e57c2] text-white rounded-xl px-4 py-2">Ver ofertas</button></Link>
+
             </div>
 
             {/*Trocar por carrossel(componente ou n) depois*/}

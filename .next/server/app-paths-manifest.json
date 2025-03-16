@@ -1,4 +1,7 @@
 {
+  "/(home)/page": "app/(home)/page.js",
+  "/(home)/catalog/page": "app/(home)/catalog/page.js",
+  "/(login)/login/page": "app/(login)/login/page.js",
   "/admin/page": "app/admin/page.js",
-  "/(home)/page": "app/(home)/page.js"
+  "/admin/manage/games/page": "app/admin/manage/games/page.js"
 }
