@@ -1,8 +1,4 @@
 {
-  "/(home)/catalog/page": "app/(home)/catalog/page.js",
-  "/admin/manage/games/view/[id]/page": "app/admin/manage/games/view/[id]/page.js",
-  "/admin/manage/games/edit/[id]/page": "app/admin/manage/games/edit/[id]/page.js",
-  "/(home)/page": "app/(home)/page.js",
-  "/(home)/game/[id]/page": "app/(home)/game/[id]/page.js",
-  "/admin/manage/games/page": "app/admin/manage/games/page.js"
+  "/admin/page": "app/admin/page.js",
+  "/(home)/page": "app/(home)/page.js"
 }

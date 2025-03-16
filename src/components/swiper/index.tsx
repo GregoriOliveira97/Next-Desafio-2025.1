@@ -19,7 +19,7 @@ export default function CustomSwiper({ children }: CustomSwiperProps) {
   };
 
   return (
-    <div className="relative flex px-24 justify-center items-center h-full w-full overflow-hidden">
+    <div className="relative flex p-24 justify-center items-center h-full w-full overflow-hidden">
       {/* Swiper Container */}
       <div
         className="flex transition-transform duration-500"
