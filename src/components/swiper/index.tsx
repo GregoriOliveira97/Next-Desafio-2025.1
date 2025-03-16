@@ -5,31 +5,34 @@ type CustomSwiperProps = {
 };
 
 export default function CustomSwiper({ children }: CustomSwiperProps) {
+  const visiblePages = 2; // Número de "páginas" visíveis
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const totalPages = Math.ceil(children.length / visiblePages); // Número total de "páginas"
+
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? children.length - 1 : prev - 1));
+    setCurrentIndex((prev) => (prev === 0 ? totalPages - 1 : prev - 1));
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === children.length - 1 ? 0 : prev + 1));
+    setCurrentIndex((prev) => (prev === totalPages - 1 ? 0 : prev + 1));
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative flex px-24 justify-center items-center h-full w-full overflow-hidden">
       {/* Swiper Container */}
       <div
         className="flex transition-transform duration-500"
         style={{
-          transform: `translateX(-${currentIndex * (100 / 3)}%)`, // Move com base no índice
+          transform: `translateX(-${currentIndex * 100}%)`,
+          width: `${totalPages * 100}%`, // Largura total baseada nas páginas
+          gap: "20px", // Espaço entre slides
         }}
       >
         {children.map((child, index) => (
           <div
             key={index}
-            className={`flex-shrink-0 w-[calc(100%/3)] transition-transform duration-500 ${
-              index === currentIndex ? "scale-110 z-10" : "scale-90 opacity-70"
-            }`}
+            className="flex-shrink-0 w-[calc(100%/2)] transition-transform duration-500"
           >
             {child}
           </div>
@@ -52,7 +55,7 @@ export default function CustomSwiper({ children }: CustomSwiperProps) {
 
       {/* Indicadores (bolinhas) */}
       <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
-        {children.map((_, index) => (
+        {Array.from({ length: totalPages }).map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
