@@ -1,9 +1,15 @@
+
+"use client"
 import Image from "next/image";
 import Title from "../title";
 import GameCard from "../games-card";
 import Link from "next/link";
 import { Product } from "@prisma/client";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+
+import { Pagination } from 'swiper/modules';
+import CustomSwiper from "../swiper";
 
 
 type GamesProps={
@@ -19,35 +25,37 @@ export default async function HeroSection({posts}:GamesProps){
                 <button className="bg-[#7e57c2] text-white rounded-xl px-4 py-2">Ver ofertas</button>
             </div>
 
+            {/*Trocar por carrossel(componente ou n) depois*/}
             <div className="flex flex-col gap-4 justify-center items-center text-center">
                 <Title title="Alguns dos jogos que você vai encontrar por aqui: "/>
-                <div className="flex items-center justify-center gap-4 w-full">
-                    {/*Trocar por cards(componente) depois*/}
-                        <Image
-                            src={'/imgs/nioh2capa.png'}  
-                            alt="Logo do site"
-                            width={904}
-                            height={904}
-                            className="object-fit h-20 w-16 md:h-36 md:w-32"/>    
-                         <Image
-                            src={'/imgs/nioh2capa.png'} 
-                            alt="Logo do site"
-                            width={904}
-                            height={904}
-                            className="object-fit h-20 w-16 md:h-36 md:w-32"/>    
-                         <Image
-                            src={'/imgs/nioh2capa.png'} 
-                            alt="Logo do site"
-                            width={904}
-                            height={904}
-                            className="object-fit h-20 w-16 md:h-36 md:w-32"/>  
-                        <Image
-                            src={'/imgs/nioh2capa.png'}  
-                            alt="Logo do site"
-                            width={904}
-                            height={904}
-                            className="object-fit h-20 w-16 md:h-36 md:w-32"/>  
 
+                <div className="flex items-center align-middle justify-center gap-4 w-full">
+                <CustomSwiper  >
+                        <Image
+                            src={'/imgs/nioh2capa.png'}  
+                            alt="Logo do site"
+                            width={904}
+                            height={904}
+                            className="object-fit h-20 w-16 md:h-36 md:w-32"/>    
+                         <Image
+                            src={'/imgs/thelastofus.jpg'} 
+                            alt="Logo do site"
+                            width={904}
+                            height={904}
+                            className="object-fit h-20 w-16 md:h-36 md:w-32"/>    
+                         <Image
+                            src={'/imgs/red-dead2.jpg'} 
+                            alt="Logo do site"
+                            width={904}
+                            height={904}
+                            className="object-fit h-20 w-16 md:h-36 md:w-32"/>  
+                        <Image
+                            src={'/imgs/resident-evil4-capa.jpg'}  
+                            alt="Logo do site"
+                            width={904}
+                            height={904}
+                            className="object-fit h-20 w-16 md:h-36 md:w-32"/>  
+                </CustomSwiper>
                 </div>
             </div>
 

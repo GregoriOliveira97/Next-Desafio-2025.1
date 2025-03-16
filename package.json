@@ -20,6 +20,7 @@
     "react-email": "^1.2.0",
     "react-hook-form": "^7.54.2",
     "resend": "^4.1.2",
+    "swiper": "^11.2.5",
     "zod": "^3.24.2"
   },
   "devDependencies": {
