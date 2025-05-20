@@ -1,0 +1,6 @@
+Um Desafio de Tecnologia Next q fiz na Empresa Júnior Code na Universidade Federal de Juiz de Fora(UFJF). Um sistema de e-comerce com temática de venda de jogos. 
+Por ser meu primeiro contato apresentou alguns erros relacionadois ao uso de server/client(e pretendo arrumar/estão arrumados).
+Foi utilizado além Next, Typescript, Tailwind, Prisma com PostgreSQL e API Route para envio de email para contato q ficou funcional ao fim do projeto.
+Sistema teve foco só na representação dos itens para "compra", renderização das páginas, tanto q o Login n é de fato funcional, basta clicar no botão de login sem preencher nada q ja é redirecionado a Dashboard
+para poder criar, editar e remover itens q vão aparecer no catálogo(imagem, descrição, preço, nome) e poderá ser acessado na sua página individual de produto também. A função de carrinho e compra não esta 
+implementada, mas tem tem a página criada(front) para poder ter uma ideia de como seria. E por fim páginas comuns de qualquer sistema, Página Inicial com alguns produtos a mostra, página de contato, catálogo 
